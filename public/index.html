@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome to Firebase Hosting</title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Cloud Cafe</h1>
+    <div class="content">
+      <form id="add-cafe-form">
+        <input type="text" name="name" placeholder="Cafe Name" />
+        <input type="text" name="city" placeholder="Cafe City" />
+        <button>Add Cafe</button>
+      </form>
+      <ul id="cafe-list"></ul>
+    </div>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: 'AIzaSyCFbhczkC7Vp8TE3Qx8FK-d2MhXTJRv7ts',
+        authDomain: 'the-firebase-firestore.firebaseapp.com',
+        databaseURL: 'https://the-firebase-firestore.firebaseio.com',
+        projectId: 'the-firebase-firestore',
+        storageBucket: 'the-firebase-firestore.appspot.com',
+        messagingSenderId: '106056587037',
+        appId: '1:106056587037:web:2888677053817c66b2b3f4',
+        measurementId: 'G-ZG09PYMHTY'
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      const db = firebase.firestore();
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
